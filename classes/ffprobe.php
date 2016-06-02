@@ -1,17 +1,13 @@
 <?php
 
-namespace extensions\ffmpeg_wrapper {
+namespace adapt\video\ffmpeg_wrapper {
     
-    class ffprobe extends \frameworks\adapt\base{
+    class ffprobe extends \adapt\base{
         
-        //public function __construct(){
-        //    parent::__construct();
-        //}
-        
-        /* Temp function until the inhetitance chain is enabled */
-        public function error($error){
-            print $error;
+        public function __construct(){
+            parent::__construct();
         }
+        
         
         public function probe($file){
             $values = array('container' => array(), 'streams' => array());
